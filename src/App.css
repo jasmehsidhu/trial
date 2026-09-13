@@ -185,7 +185,37 @@ font-size: 25px;
     color:white;
     font-family: var(--body);
 }
+#ham{
+    display: none;
+}
+#popup{
+        height:10%;
+        width:100vw;
+        position: absolute;
+        background-color: #fff;
+        display:flex;
+        gap:30px;
+        align-items: center;
+        justify-content: center;
+        top:-10%;
+        left:0;
+        transition: top 0.5s ease;
+        font-family: var(--body);
+        color:var(--font)
+    }
+ #close{
+    position: absolute;
+    right:4%;
+    top:1.5vh
+ }
 @media (max-width: 768px) {
+    #links{
+        display:none
+    }
+    #ham{
+        display: block;
+        font-size: 25px;
+    }
     footer{
         padding:10px
     }
